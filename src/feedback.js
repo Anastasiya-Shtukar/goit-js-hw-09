@@ -21,7 +21,8 @@ feedbackForm.addEventListener('input', function (event) {
   );
 });
 
-feedbackForm.addEventListener('submit', () => {
+feedbackForm.addEventListener('submit', event => {
+  event.preventDefault();
   if (email.value.trim() === '' || message.value.trim() === '') {
     return alert('All form fields must be filled in');
   }
