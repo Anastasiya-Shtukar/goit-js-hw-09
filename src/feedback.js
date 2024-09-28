@@ -4,14 +4,10 @@ const message = document.querySelector('.feedback-message');
 
 let savedfeedbackFormState = localStorage.getItem('feedback-form-state');
 let parsedfeedbackFormState = JSON.parse(savedfeedbackFormState);
-console.log(parsedfeedbackFormState);
 try {
   email.value = parsedfeedbackFormState['email'];
   message.value = parsedfeedbackFormState['message'];
-} catch (error) {
-  console.log(error.name); // "SyntaxError"
-  console.log(error.message); // Unexpected token W in JSON at position 0
-}
+} catch (error) {}
 
 feedbackForm.addEventListener('input', function (event) {
   let feedbackFormState = {
