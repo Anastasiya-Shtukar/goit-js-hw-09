@@ -1,0 +1,65 @@
+.feedback-form {
+  width: 408px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(46, 47, 66, 1);
+}
+
+.feedback-email {
+  width: 360px;
+  height: 40px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+}
+
+.feedback-email:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.feedback-email:active {
+  border: 1px solid rgba(128, 128, 128, 1);
+}
+
+.feedback-message {
+  width: 360px;
+  height: 80px;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+}
+
+.feedback-message:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.feedback-email:active {
+  border: 1px solid rgba(128, 128, 128, 1);
+}
+
+.feedback-submit {
+  margin-top: 16px;
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(78, 117, 255, 1);
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.feedback-submit:hover {
+  background-color: rgba(108, 140, 255, 1);
+}

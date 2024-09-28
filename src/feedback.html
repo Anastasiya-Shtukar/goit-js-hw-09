@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input class="feedback-email" type="email" name="email" autofocus />
+      </label>
+      <label>
+        Message
+        <textarea class="feedback-message" name="message" rows="8"></textarea>
+      </label>
+      <button class="feedback-submit" type="submit">Submit</button>
+    </form>
     <ul class="nav-list">
       <li class="nav-item">
         <a class="nav-link {=$highlight-act}" href="./index.html">gallery</a>
       </li>
     </ul>
+    <script src="./feedback.js" type="module"></script>
   </body>
 </html>
